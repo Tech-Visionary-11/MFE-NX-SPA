@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shell</title>
+      <base href="/" />
+
+    <template id="single-spa-layout">
+      <single-spa-router>
+        <div class="workspace">
+          <route  path="/dashboard/*" >
+            <div class="content">
+              <application name="dashboard" class="application"></application>
+            </div>
+          </route>
+          <route  default >
+            <div class="content">
+              <application name="dashboard" class="application"></application>
+            </div>
+          </route>
+
+
+        </div>
+      </single-spa-router>
+    </template>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/src/styles.css" />
+
+
+     <meta name="importmap-type" use-injector />
+
+    <script type="module">
+      import { getAppUrl } from './src/config/AppConfigUrls.ts';
+
+      const importMap = {
+        imports: {
+          'dashboard': getAppUrl('dashboard'),
+     
+        },
+      };
+
+      document.head.appendChild(
+        Object.assign(document.createElement('script'), {
+          type: 'importmap',
+          textContent: JSON.stringify(importMap),
+        }),
+      );
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+       <import-map-overrides-full
+      show-when-local-storage="devtools"
+      dev-libs
+    ></import-map-overrides-full>
+  </body>
+</html>

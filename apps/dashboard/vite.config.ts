@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig(() => ({
+export default defineConfig({
   root: __dirname,
   cacheDir: '../../node_modules/.vite/apps/dashboard',
   server: {
@@ -10,7 +10,7 @@ export default defineConfig(() => ({
     host: 'localhost',
   },
   preview: {
-    port: 4300,
+    port: 4200,
     host: 'localhost',
   },
   plugins: [react()],
@@ -19,11 +19,25 @@ export default defineConfig(() => ({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
-    outDir: './dist',
+    outDir: '../../dist/apps/dashboard',
+     lib: {
+      entry: 'src/main.single-spa.tsx', 
+      name: 'dashboard',      
+      formats: ['system'],    
+       fileName: () => 'assets/main.single-spa.js',
+    },
+     rollupOptions: {
+      output: {
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: 'assets/[name].js',
+        inlineDynamicImports: false,
+      },
+    },
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
     },
   },
-}));
+});
