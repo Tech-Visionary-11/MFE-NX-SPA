@@ -1,10 +1,11 @@
 import NxWelcome from './nx-welcome';
-
+import { MyMfeWorkspaceUi } from '@my-mfe-workspace/ui';
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   return (
     <div>
+      <MyMfeWorkspaceUi/>
       <NxWelcome title="@my-mfe-workspace/dashboard" />
 
       {/* START: routes */}

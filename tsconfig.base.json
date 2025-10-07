@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@my-mfe-workspace/source"]
+    "customConditions": ["@my-mfe-workspace/source"],
+    "baseUrl": "./",
+    "paths": {
+      "@my-mfe-workspace/ui": ["shared/ui/src/index.ts"]
+    }
   }
 }
