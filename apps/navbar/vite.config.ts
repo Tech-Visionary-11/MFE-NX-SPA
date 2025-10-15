@@ -22,7 +22,7 @@ export default defineConfig({
   build: {
     outDir: '../../dist/apps/navbar',
     lib: {
-          entry: 'src/main.single-spa.tsx', 
+          entry: 'src/main.single-spa.ts', 
           name: 'navbar',      
           formats: ['system'],    
            fileName: () => 'assets/main.single-spa.js',

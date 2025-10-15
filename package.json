@@ -10,6 +10,7 @@
     "react-dom": "19.0.0",
     "react-router-dom": "6.29.0",
     "single-spa-layout": "^3.0.0",
+    "single-spa-vue": "^3.0.1",
     "vue": "^3.5.13"
   },
   "devDependencies": {
