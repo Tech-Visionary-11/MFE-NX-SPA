@@ -9,7 +9,8 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router-dom": "6.29.0",
-    "single-spa-layout": "^3.0.0"
+    "single-spa-layout": "^3.0.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
@@ -17,10 +18,11 @@
     "@eslint/js": "^9.8.0",
     "@nx/eslint": "21.5.3",
     "@nx/eslint-plugin": "21.5.3",
-    "@nx/js": "21.5.3",
+    "@nx/js": "21.6.3",
     "@nx/react": "21.5.3",
-    "@nx/vite": "21.5.3",
-    "@nx/web": "21.5.3",
+    "@nx/vite": "21.6.3",
+    "@nx/vue": "21.6.3",
+    "@nx/web": "21.6.3",
     "@nx/workspace": "21.5.3",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
@@ -29,8 +31,13 @@
     "@types/node": "^20.0.0",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
+    "@typescript-eslint/parser": "^7.16.0",
     "@vitejs/plugin-react": "^4.2.0",
+    "@vitejs/plugin-vue": "^5.2.3",
     "@vitest/ui": "^3.0.0",
+    "@vue/eslint-config-prettier": "7.1.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/test-utils": "^2.4.6",
     "ajv": "^8.0.0",
     "autoprefixer": "10.4.13",
     "eslint": "^9.8.0",
@@ -39,6 +46,7 @@
     "eslint-plugin-jsx-a11y": "6.10.1",
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "5.0.0",
+    "eslint-plugin-vue": "^9.16.1",
     "jiti": "2.4.2",
     "jsdom": "~22.1.0",
     "nx": "21.5.3",
@@ -54,7 +62,8 @@
     "vite-plugin-dts": "~4.5.0",
     "vite-plugin-single-spa": "^1.1.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.0"
+    "vitest": "^3.0.0",
+    "vue-tsc": "^2.2.8"
   },
   "workspaces": [
     "apps/*",

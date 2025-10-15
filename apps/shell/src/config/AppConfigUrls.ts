@@ -8,6 +8,9 @@ export const APP_URLS: AppConfig = {
   'dashboard': {
     local: 'http://localhost:4200/src/main.single-spa.js',
     },
+  'navbar': {
+    local: 'http://localhost:4201/src/main.single-spa.js',
+    },
 };
 
 export const getAppUrl = (appName: string): string => {

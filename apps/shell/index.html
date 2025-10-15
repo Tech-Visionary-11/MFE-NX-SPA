@@ -8,17 +8,17 @@
     <template id="single-spa-layout">
       <single-spa-router>
         <div class="workspace">
-          <route  path="/dashboard/*" >
-            <div class="content">
-              <application name="dashboard" class="application"></application>
-            </div>
-          </route>
           <route  default >
             <div class="content">
               <application name="dashboard" class="application"></application>
             </div>
+          </route> 
           </route>
-
+    <route  path="navbar/*" >
+            <div class="content">
+              <application name="navbar" class="application"></application>
+            </div>
+          </route>
 
         </div>
       </single-spa-router>
@@ -38,6 +38,7 @@
       const importMap = {
         imports: {
           'dashboard': getAppUrl('dashboard'),
+          'navbar': getAppUrl('navbar'),
      
         },
       };
