@@ -2,7 +2,9 @@
   "name": "@my-mfe-workspace/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+      "build": "npx nx build dashboard"
+  },
   "private": true,
   "dependencies": {
     "@my-mfe-workspace/ui": "^0.0.1",
