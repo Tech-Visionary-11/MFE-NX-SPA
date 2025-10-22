@@ -26,7 +26,7 @@ export default defineConfig({
      lib: {
       entry: 'src/main.single-spa.tsx', 
       name: 'dashboard',      
-      formats: ['system'],    
+      formats: ['es'],    
        fileName: () => 'assets/main.single-spa.js',
     },
      rollupOptions: {
@@ -34,14 +34,12 @@ export default defineConfig({
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name][extname]',
         entryFileNames: 'assets/[name].js',
-        inlineDynamicImports: false,
-        format: 'system',
       },
     },
     emptyOutDir: true,
-    reportCompressedSize: true,
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
+    // reportCompressedSize: true,
+    // commonjsOptions: {
+    //   transformMixedEsModules: true,
+    // },
   },
 });
