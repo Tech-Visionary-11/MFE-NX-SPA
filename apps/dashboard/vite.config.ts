@@ -2,7 +2,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import vitePluginSingleSpa from "vite-plugin-single-spa";
 
 export default defineConfig({
   root: __dirname,
@@ -18,11 +17,6 @@ export default defineConfig({
   plugins: [
     react(),
     tsconfigPaths(),
-    vitePluginSingleSpa({
-      type: "mife",
-      spaEntryPoints: "src/main.single-spa.tsx", 
-      serverPort: 4200, 
-    }),
   ],
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
@@ -41,6 +35,7 @@ export default defineConfig({
         assetFileNames: 'assets/[name][extname]',
         entryFileNames: 'assets/[name].js',
         inlineDynamicImports: false,
+        format: 'system',
       },
     },
     emptyOutDir: true,
