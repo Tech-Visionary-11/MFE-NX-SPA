@@ -18,6 +18,7 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
   ],
+    define: { 'process.env.NODE_ENV': '"production"' },
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
   // },
