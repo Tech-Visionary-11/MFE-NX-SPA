@@ -6,8 +6,7 @@ interface AppConfig {
 
 export const APP_URLS: AppConfig = {
   'dashboard': {
-    // local: 'http://localhost:4200/src/main.single-spa.js',
-    local:"https://dashboard-react-nine-smoky.vercel.app/assets/main.single-spa.js"
+    local: 'http://localhost:4200/src/main.single-spa.js',
     },
   'navbar': {
     local: 'http://localhost:4201/src/main.single-spa.js',
