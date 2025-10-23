@@ -5,7 +5,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   root: __dirname,
-    base: '/',
   cacheDir: '../../node_modules/.vite/apps/dashboard',
   server: {
     port: 4200,

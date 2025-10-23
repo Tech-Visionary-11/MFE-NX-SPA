@@ -33,13 +33,13 @@ export default defineConfig({
             chunkFileNames: 'assets/[name].js',
             assetFileNames: 'assets/[name][extname]',
             entryFileNames: 'assets/[name].js',
-            inlineDynamicImports: false,
+            // inlineDynamicImports: false,
           },
         },
     emptyOutDir: true,
-    reportCompressedSize: true,
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
+    // reportCompressedSize: true,
+    // commonjsOptions: {
+    //   transformMixedEsModules: true,
+    // },
   },
 });
