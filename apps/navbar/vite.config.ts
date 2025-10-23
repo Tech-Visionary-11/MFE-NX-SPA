@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 export default defineConfig({
   root: __dirname,
@@ -15,7 +16,7 @@ export default defineConfig({
     host: 'localhost',
   },
     define: { 'process.env.NODE_ENV': '"production"' },
-  plugins: [vue(),tsconfigPaths()],
+  plugins: [vue(),tsconfigPaths(),cssInjectedByJsPlugin()],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
