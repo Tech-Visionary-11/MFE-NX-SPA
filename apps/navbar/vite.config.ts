@@ -6,7 +6,6 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 export default defineConfig({
   root: __dirname,
-    base: '/navbar/',
   cacheDir: '../../node_modules/.vite/apps/navbar',
   server: {
     port: 4201,
