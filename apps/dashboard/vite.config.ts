@@ -25,12 +25,12 @@ export default defineConfig({
   // },
   build: {
     outDir: '../../dist/apps/dashboard',
-     lib: {
-      entry: 'src/main.single-spa.tsx', 
-      name: 'dashboard',      
-      formats: ['es'],    
-       fileName: () => 'assets/main.single-spa.js',
-    },
+    //  lib: {
+    //   entry: 'src/main.single-spa.tsx', 
+    //   name: 'dashboard',      
+    //   formats: ['es'],    
+    //    fileName: () => 'assets/main.single-spa.js',
+    // },
      rollupOptions: {
       output: {
         chunkFileNames: 'assets/[name].js',
