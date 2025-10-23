@@ -8,13 +8,13 @@
     <template id="single-spa-layout">
       <single-spa-router>
         <div class="workspace">
-          <route  path="dashboard" >
+          <route  default >
             <div class="content">
               <application name="dashboard" class="application"></application>
             </div>
           </route> 
           </route>
-    <route  default >
+    <route  path="navbar" >
             <div class="content">
               <application name="navbar" class="application"></application>
             </div>
@@ -53,7 +53,6 @@
 
   </head>
   <body>
-  
 
     <div id="root"></div>
     <script type="module" src="/src/main.tsx">
