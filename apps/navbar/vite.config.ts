@@ -14,6 +14,7 @@ export default defineConfig({
     port: 4201,
     host: 'localhost',
   },
+    define: { 'process.env.NODE_ENV': '"production"' },
   plugins: [vue(),tsconfigPaths()],
   // Uncomment this if you are using workers.
   // worker: {
@@ -24,7 +25,7 @@ export default defineConfig({
     lib: {
           entry: 'src/main.single-spa.ts', 
           name: 'navbar',      
-          formats: ['system'],    
+          formats: ['es'],    
            fileName: () => 'assets/main.single-spa.js',
         },
          rollupOptions: {

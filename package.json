@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build:dashboard":"npx nx build dashboard",
+    "build:navbar":"npx nx build navbar",
+    "build:shell":"npx nx build shell"
   },
   "private": true,
   "dependencies": {
