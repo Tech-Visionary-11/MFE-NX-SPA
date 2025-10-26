@@ -10,7 +10,8 @@ export const APP_URLS: AppConfig = {
     local:"https://mfe-nx-spa-dashboard-react.vercel.app/assets/main.single-spa.js"
     },
   'navbar': {
-    local: 'http://localhost:4201/src/main.single-spa.js',
+    // local: 'http://localhost:4201/src/main.single-spa.js',
+    local:"https://mfe-nx-spa-navbar-vue.vercel.app/assets/main.single-spa.js"
     },
 };
 
